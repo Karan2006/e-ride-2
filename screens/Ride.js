@@ -18,9 +18,6 @@ export default class TransactionScreen extends Component {
     const { status } = Permissions.askAsync(Permissions.CAMERA);
 
     this.setState({
-      /*status === "granted" is true when user has granted permission
-          status === "granted" is false when user has not granted the permission
-        */
       hasCameraPermissions: status === "granted",
       domState: domState,
       scanned: false
